@@ -14,27 +14,27 @@ async function products(list, container) {
 
         addEvent.classList.add(
             "bg-background-color",
-            "w-80",
+            "max-w-40",
             "h-40",
             "flex",
             "flex-col",
-            "justify-between",
-            "item-center",
+            "justify-around",
+            "items-center",
             "text-primary-color-300",
             "p-3",
             "text-justify",
             "rounded-lg",
-            "text-[10px]",
+            "text-[8px]",
 
         )
 addEvent.innerHTML=`
-            <img src="${styleProducts.image}" alt="">
-            <p>${styleProducts.title}</p>
+            <img src="${styleProducts.image}" alt="" class="w-[40px]">
+            <p class="text-[8px]">${styleProducts.title}</p>
             <h3>${styleProducts.title}</h3>
-            <button>${styleProducts.price}</button>
+            <button class="text-blue-950">${styleProducts.price}</button>
 `
 
-container.appendChild(addEvent)
+container.appendChild(addEvent);
     });
 
 }
